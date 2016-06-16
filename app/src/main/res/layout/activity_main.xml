@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/soundwave3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.aashimagarg.loginscreen.MainActivity"
+    android:clickable="true">
+cdllblftgiunnhkkftibgtkevgvdejvj
+    <android.gesture.GestureOverlayView
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:id="@+id/gestureOverlayView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#A9282828"
+        android:fadeEnabled="false"
+        android:focusable="false"
+        android:touchscreenBlocksFocus="true"></android.gesture.GestureOverlayView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login. Here we go!"
+        android:id="@+id/tvWelcome"
+        android:layout_alignTop="@+id/gestureOverlayView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="E-mail address"
+        android:textColor="#FFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="Password"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:text="@android:string/cancel"
+        android:background="#FFFF"
+        android:textAllCaps="false"
+        android:id="@+id/btnCancel"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:layout_width="120dp"
+        android:background="#33ccff"
+        android:layout_height="48dp"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:textAllCaps="false"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="I forgot my password"
+        android:textColor="#33ccff"
+        android:id="@+id/tvForgot"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnCancel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
